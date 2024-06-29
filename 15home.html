@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Caracteres</title>
+    <link rel="stylesheet" href="./15style.css">
+    <link rel="shortcut icon" href="./check-icone-1-scaled.png">
+</head>
+<body>
+    <a href="./home.html">
+        <div class="top-right">
+            <button id="calculadoraBtn">v2.0💣</button>
+        </div>
+    </a>
+    <div class="container">
+        <h1>Verificador de Caracteres v1.5</h1>
+        <div>
+            <label for="text">Texto:</label>
+            <textarea id="text" placeholder="Digite o texto"></textarea>
+        </div>
+        <div>
+            <label for="characters">Caracteres a procurar:</label>
+            <input type="text" id="characters" placeholder="Digite os caracteres">
+        </div>
+        <div>
+            <label for="remover">Remover caracteres:</label>
+            <input type="text" id="remover" placeholder="Digite o que deseja remover do texto..." value="，。！1234567890@#$">
+        </div>
+        <div>
+            <label for="ignoreCase">Considerar maiúsculas e minúsculas iguais:</label>
+            <input type="checkbox" id="ignoreCase">
+        </div>
+        <button onclick="verificarCaracteres()">Verificar</button>
+        <div id="resultado">
+            <h2>Resultado</h2>
+        </div>
+    </div>
+    <script src="./15script.js"></script>
+</body>
+</html>
